@@ -1,0 +1,26 @@
+<h6 *ngIf="!allowEdit">No Editable is found</h6>
+
+<div *ngIf="allowEdit">
+  <div class="form-group">
+    <label for="name">Server Name</label>
+    <input
+      type="text"
+      id="name"
+      class="form-control"
+      [(ngModel)]="taskName">
+  </div>
+  <div class="form-group">
+    <label for="status">Server Status</label>
+    <select
+      id="status"
+      class="form-control"
+      [(ngModel)]="taskStatus">
+      <option value="Wali">Wali</option>
+      <option value="Qadir">Qadir</option>
+      <option value="Anas">Anas</option>
+    </select>
+  </div>
+  <button
+    class="btn btn-primary"
+    (click)="onUpdateServer()">Update Server</button>
+</div>

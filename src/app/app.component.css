@@ -1,0 +1,17 @@
+.container {
+    margin-top: 30px;
+  }
+
+.nav-bar ul li a {
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav-bar ul li {padding: 10px 15px;}
+
+.nav-bar ul li.active{
+  background-color: #f1f1f1;
+  box-shadow: 0 0 5px inset;
+}
